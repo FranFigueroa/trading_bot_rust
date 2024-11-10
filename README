@@ -1,0 +1,51 @@
+# 📈 Trading Bot CLI en Rust
+
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Rust](https://img.shields.io/badge/Rust-Edition%202021-informational)
+![Version](https://img.shields.io/badge/version-0.1.0-green)
+
+Un bot de trading automatizado en Rust que se conecta a la API de Binance (u otro exchange compatible) para obtener el precio actual de una criptomoneda y tomar decisiones de compra/venta basadas en umbrales configurables.
+
+## 🚀 Características
+
+- **Consulta de precios en tiempo real**: Usa la API de Binance para obtener el precio de cualquier par de criptomonedas (por ejemplo, BTC/USDT).
+- **Estrategia de trading básica**: Compra o vende automáticamente según los precios definidos por el usuario.
+- **Ejecución periódica**: Verifica el precio a intervalos regulares y toma decisiones de trading en tiempo real.
+
+## 📦 Configuración del Proyecto
+
+1. **Clonar el repositorio** y navegar al directorio del proyecto:
+
+    ```bash
+    git clone https://github.com/FranFigueroa/trading_bot_rust.git
+    cd trading_bot
+    ```
+
+2. **Instalar Rust**: Si aún no tienes Rust, instálalo ejecutando:
+
+    ```bash
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    ```
+
+3. **Configurar variables de entorno**: Crea un archivo `.env` en la raíz del proyecto y agrega tus claves de API de Binance:
+
+    ```plaintext
+    API_KEY=tu_api_key
+    API_SECRET=tu_api_secret
+    ```
+
+   > **Nota**: Asegúrate de agregar `.env` a tu archivo `.gitignore` para mantener tus claves API privadas.
+
+4. **Instalar dependencias**: Ejecuta el siguiente comando para descargar las dependencias:
+
+    ```bash
+    cargo build
+    ```
+
+## 🛠 Uso
+
+Para ejecutar el bot, usa el siguiente comando en la terminal:
+
+```bash
+cargo run
+
